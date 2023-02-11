@@ -59,7 +59,7 @@
 
     </LinearLayout>
     <Button
-        android:id="@+id/next"
+        android:id="@+id/nextXML"
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:text="@string/next"
@@ -68,13 +68,14 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/manifestImage"
         android:layout_width="841dp"
         android:layout_height="661dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/verticalLayoutMain"
         app:layout_constraintTop_toBottomOf="@+id/layoutHorizontalMain"
-        app:srcCompat="@drawable/screen_shot_2023_02_11_at_11_52_35_am"
-        tools:layout_editor_absoluteX="484dp" />
+        app:srcCompat="@drawable/screen_shot_2023_02_11_at_11_52_35_am" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

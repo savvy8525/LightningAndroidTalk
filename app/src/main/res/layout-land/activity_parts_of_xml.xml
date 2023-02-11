@@ -4,65 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    tools:context=".UI.MainActivity">
+    tools:context=".UI.PartsOfXML">
 
     <LinearLayout
         android:id="@+id/layoutHorizontalMain"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:orientation="horizontal"
         android:gravity="center_horizontal"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/boltLeft"
-            android:layout_width="99dp"
-            android:layout_height="99dp"
-            app:srcCompat="@drawable/baseline_bolt_24" />
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/lightningTalk"
+            android:id="@+id/xmlTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:text="@string/lightning_talk"
-            android:textStyle="bold"
+            android:text="@string/xml"
+            android:textColor="@color/black"
             android:textSize="48sp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/boltRight"
-            android:layout_width="99dp"
-            android:layout_height="99dp"
-            app:srcCompat="@drawable/baseline_bolt_24" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutXMLDescription"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutHorizontalMain">
 
         <LinearLayout
             android:id="@+id/verticalLayoutMain"
-            android:layout_width="match_parent"
-            android:layout_height="550dp"
-            android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/layoutHorizontalMain">
+            android:layout_width="479dp"
+            android:layout_height="687dp"
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:gravity="center"
-                android:text="@string/welcome"
-                android:textColor="@color/black"
-                android:textSize="29sp"
-                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:text="@string/what_is_android"
+                android:text="@string/what_is_xml"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -72,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/android_description"
+                android:text="@string/xml_description"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
@@ -81,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:text="@string/programming_languages"
+                android:text="@string/how_is_it_used_in_android"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -91,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="10dp"
-                android:text="@string/language_descriptions"
+                android:text="@string/used_in_android_description"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
 
@@ -100,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:text="IDE"
+                android:text="@string/what_are_activities"
                 android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -110,33 +95,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="35dp"
                 android:layout_marginTop="10dp"
-                android:text="-Using Android Studio with Android Virtual Device\n-Running App on Pixel C tablet"
+                android:text="@string/activities_description"
                 android:textColor="@color/black"
                 android:textSize="24sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/fun_fact"
-                android:textColor="@color/black"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/fun_fact_description"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-
-
 
 
         </LinearLayout>
+
+    </LinearLayout>
+
     <Button
         android:id="@+id/next"
         android:layout_width="150dp"
@@ -144,6 +111,6 @@
         android:text="@string/next"
         android:layout_margin="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/verticalLayoutMain"/>
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

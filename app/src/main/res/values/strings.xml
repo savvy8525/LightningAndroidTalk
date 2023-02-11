@@ -9,4 +9,11 @@
     <string name="fun_fact_description">-All major updates are named after desserts and in alphabetical order\n-This version\'s name is Tiramisu!</string>
     <string name="lightning_talk">Android Lightning Talk!</string>
     <string name="next">Next!</string>
+    <string name="xml">XML</string>
+    <string name="what_is_xml">What is XML?</string>
+    <string name="xml_description">-XML stands for extensible markup language\n-Used for storing data</string>
+    <string name="how_is_it_used_in_android">How is it used in Android?</string>
+    <string name="used_in_android_description">-Used to create content on Android Activities\n-Stores information such as color, strings, and images to be called</string>
+    <string name="what_are_activities">What are activities?</string>
+    <string name="activities_description">-We are in one right now!\n-Refers to the screen layouts (pages)\n-Each time we hit [Next!] we are moving to a new activity</string>
 </resources>
