@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".UI.PartsOfXML">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is portrait view! It can be very different from landscape but still function with the same class as landscape view."
+            android:textColor="@color/black"
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
