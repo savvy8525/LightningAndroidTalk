@@ -8,4 +8,5 @@
     <string name="fun_fact">Fun Fact!</string>
     <string name="fun_fact_description">-All major updates are named after desserts and in alphabetical order\n-This version\'s name is Tiramisu!</string>
     <string name="lightning_talk">Android Lightning Talk!</string>
+    <string name="next">Next!</string>
 </resources>
