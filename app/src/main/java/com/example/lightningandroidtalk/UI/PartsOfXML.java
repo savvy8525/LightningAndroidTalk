@@ -20,7 +20,7 @@ public class PartsOfXML extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PartsOfXML.this, ComponentsInActivity.class);
+                Intent intent = new Intent(PartsOfXML.this, ActivityDescription.class);
                 startActivity(intent);
             }
         });

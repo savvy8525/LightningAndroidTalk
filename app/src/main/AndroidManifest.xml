@@ -14,6 +14,7 @@
         <activity
             android:name=".UI.ActivityDescription"
             android:exported="false"
+            android:label="Activities"
             android:parentActivityName=".UI.PartsOfXML" />
         <activity
             android:name=".UI.ComponentsInActivity"

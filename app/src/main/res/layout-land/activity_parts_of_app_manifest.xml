@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:text="Android Manifest"
+            android:text="@string/android_manifest"
             android:textColor="@color/black"
             android:textSize="48sp"
             android:textStyle="bold" />
@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
-            android:text="What is the Android Manifest?"
+            android:text="@string/what_is_the_android_manifest"
             android:textColor="@color/black"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
             android:layout_marginTop="10dp"
-            android:text="-Contains important information about the application contents\n-Sets a range of information from labels at the top of the screen to the target API\n-Without the Manifest, your app will not function"
+            android:text="@string/manifest_items"
             android:textColor="@color/black"
             android:textSize="24sp" />
 

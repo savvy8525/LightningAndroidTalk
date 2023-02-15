@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:text="Activities"
+            android:text="@string/activities"
             android:textColor="@color/black"
             android:textSize="48sp"
             android:textStyle="bold" />
@@ -28,54 +28,93 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/verticalLayoutMain"
-        android:layout_width="479dp"
-        android:layout_height="687dp"
-        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutHorizontalMain">
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:text="How do we tell activities what to do?"
-            android:textColor="@color/black"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="10dp"
-            android:text="-Each XML file can be associated with a class\n-Instead of a Main function, there is the onCreate function\n-When an activity loads or changes, the onCreaate is called\n-Listeners can be placed here or outside if the task is more specific"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:text="What are Listeners?"
-            android:textColor="@color/black"
-            android:textSize="28sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="10dp"
-            android:text="-Listeners tell components within activities what they do when interacted with\n-Buttons, switches, spinners can all get listeners"
-            android:textColor="@color/black"
-            android:textSize="24sp" />
+        <LinearLayout
+            android:id="@+id/verticalLayoutMain"
+            android:layout_width="479dp"
+            android:layout_height="687dp"
+            android:orientation="vertical">
 
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/tell_activites"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/oncreate_details"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/what_are_listeners"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/listener_desc"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toEndOf="@id/verticalLayoutMain"
+            app:layout_constraintTop_toBottomOf="@id/layoutHorizontalMain">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="630dp"
+                android:layout_height="282dp"
+                app:srcCompat="@drawable/oncreate"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="312dp"
+                app:srcCompat="@drawable/click_listener" />
+        </LinearLayout>
     </LinearLayout>
+    <Button
+        android:id="@+id/nextComponents"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="@string/next"
+        android:layout_margin="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

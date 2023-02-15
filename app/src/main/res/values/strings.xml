@@ -18,6 +18,19 @@
     <string name="activities_quick_description">-We are in one right now!\n-Refers to the screen layouts (pages)\n-We will move on to the next screen to dive into Activities a bit more</string>
     <string name="textview">TextView</string>
     <string name="switch_on">Switch is on</string>
+    <string name="add_item">Add Item</string>
+    <string name="delete_item">Delete Item</string>
+    <string name="toast">Toast!</string>
+    <string name="activities">Activities</string>
+    <string name="tell_activites">How do we tell activities what to do?</string>
+    <string name="oncreate_details">-Each XML file can be associated with a class\n-Instead of a Main function, there is the onCreate function\n-When an activity loads or changes, the onCreaate is called\n-Listeners can be placed here or outside if the task is more specific</string>
+    <string name="what_are_listeners">What are Listeners?</string>
+    <string name="listener_desc">-Listeners tell components within activities what they do when interacted with\n-Buttons, switches, spinners can all get listeners</string>
+    <string name="android_manifest">Android Manifest</string>
+    <string name="what_is_the_android_manifest">What is the Android Manifest?</string>
+    <string name="manifest_items">-Contains important information about the application contents\n-Sets a range of information from labels at the top of the screen to the target API\n-Without the Manifest, your app will not function</string>
+    <string name="resources">Resources</string>
+    <string name="pressed">Button pressed!</string>
     <string-array name="spinner_list">
         <item>TextView</item>
         <item>Button</item>

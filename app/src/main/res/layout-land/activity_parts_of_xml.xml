@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:gravity="center_horizontal"
-            android:text="Resources"
+            android:text="@string/resources"
             android:textColor="@color/black"
             android:textSize="48sp"
             android:textStyle="bold" />
