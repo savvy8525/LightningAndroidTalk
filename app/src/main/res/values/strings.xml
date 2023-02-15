@@ -13,8 +13,15 @@
     <string name="what_is_xml">What is XML?</string>
     <string name="xml_description">-XML stands for extensible markup language\n-Used for storing data</string>
     <string name="how_is_it_used_in_android">How is it used in Android?</string>
-    <string name="used_in_android_description">-Used to create content on Android Activities\n-Stores information such as color, strings, and images to be called</string>
+    <string name="used_in_android_description">-Used to create content on Android Activities\n-Stores information such as color, strings, and images to be called\n-Best practice is to save all editable information into its own XML file within the resources\n-Each resource has its own name and description</string>
     <string name="what_are_activities">What are activities?</string>
-    <string name="activities_description">-We are in one right now!\n-Refers to the screen layouts (pages)\n-Each time we hit [Next!] we are moving to a new activity\n-There are two types of activities, landscape and portrait\n-This is landscape view\n-Colors and string values are called from a separate XML</string>
+    <string name="activities_quick_description">-We are in one right now!\n-Refers to the screen layouts (pages)\n-We will move on to the next screen to dive into Activities a bit more</string>
     <string name="textview">TextView</string>
+    <string name="switch_on">Switch is on</string>
+    <string-array name="spinner_list">
+        <item>TextView</item>
+        <item>Button</item>
+        <item>Switch</item>
+        <item>Spinner</item>
+    </string-array>
 </resources>

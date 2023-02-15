@@ -58,7 +58,9 @@
             android:layout_width="125dp"
             android:layout_height="50dp"
             android:text="Switch"
-            android:layout_margin="15dp"/>
+            android:checked="false"
+            android:layout_margin="15dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
 
         <Spinner
             android:id="@+id/spinner"
@@ -66,6 +68,7 @@
             android:layout_height="48dp"
             android:layout_margin="15dp"
             android:scrollbarSize="20dp"/>
+
     </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
@@ -76,6 +79,17 @@
             app:layout_constraintStart_toEndOf="@id/leftLayout"
             app:layout_constraintTop_toBottomOf="@id/layoutHorizontalMain"/>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/baseline_add_24"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="419dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

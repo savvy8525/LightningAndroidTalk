@@ -12,8 +12,14 @@
         android:theme="@style/Theme.LightningAndroidTalk"
         tools:targetApi="31">
         <activity
+            android:name=".UI.ActivityDescription"
+            android:exported="false"
+            android:parentActivityName=".UI.PartsOfXML" />
+        <activity
             android:name=".UI.ComponentsInActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="App Components"
+            android:parentActivityName=".UI.ActivityDescription"/>
         <activity
             android:name=".UI.PartsOfXML"
             android:exported="false"
